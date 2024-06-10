@@ -21,7 +21,7 @@ class UserController {
           email: email,
           name: name,
           password: hash,
-          role
+          role,
         });
         const token = jwt.sign(
           { email: result.email, id: result.id },
@@ -29,6 +29,32 @@ class UserController {
         );
         return res.status(201).json({ user: result, token });
       });
+    } catch (err) {
+      return res.status(401).json({ message: "" });
+    }
+  }
+
+  protected async loginUser(req: Request, res: Response, next: NextFunction) {
+    try {
+      const { email, password } = req.body;
+
+      const existingUser = await User.findOne({ email: email });
+
+      if (existingUser) {
+        const matchPassword = await bcrypt.compare(
+          password,
+          existingUser.password
+        );
+        if (!matchPassword) {
+          return res.status(401).json({ message: "" });
+        }
+        const token = jwt.sign(
+          { email: existingUser.email, id: existingUser.id },
+          SECRET_KEY
+        );
+        return res.status(201).json({ user: existingUser, token });
+      }
+      return;
     } catch (err) {
       return res.status(401).json({ message: "" });
     }
