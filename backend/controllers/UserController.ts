@@ -7,7 +7,7 @@ import { SECRET_KEY } from "../constants/secret";
 class UserController {
   protected async createUser(req: Request, res: Response, next: NextFunction) {
     try {
-      const { name, email, password, role } = req.body;
+      const { name, email, password, role, gender } = req.body;
 
       const existingUser = await User.findOne({ email: email });
 
@@ -22,6 +22,7 @@ class UserController {
           name: name,
           password: hash,
           role,
+          gender
         });
         const token = jwt.sign(
           { email: result.email, id: result.id },
