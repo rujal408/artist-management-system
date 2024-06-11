@@ -15,8 +15,32 @@
       "layer": {
         "app/(auth)/page": "action-browser"
       }
+    },
+    "40642a699b9e0f5f5de975923f1896cfb0804c29": {
+      "workers": {
+        "app/(client)/dashboard/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22D%3A%5C%5CRujal%20Project%5C%5Cartist-management-system%5C%5Cfrontend%5C%5Csrc%5C%5Ccomponent%5C%5CNavBar%5C%5Cindex.tsx%22%2C%5B%22%24%24ACTION_0%22%5D%5D%5D&__client_imported__=!"
+      },
+      "layer": {
+        "app/(client)/dashboard/page": "rsc"
+      }
+    },
+    "b488fcb382c79fc909ccf9e806bc1c7977977b31": {
+      "workers": {
+        "app/(client)/dashboard/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22D%3A%5C%5CRujal%20Project%5C%5Cartist-management-system%5C%5Cfrontend%5C%5Csrc%5C%5Ccomponent%5C%5CNavBar%5C%5Cindex.tsx%22%2C%5B%22%24%24ACTION_0%22%5D%5D%5D&__client_imported__=!"
+      },
+      "layer": {
+        "app/(client)/dashboard/page": "rsc"
+      }
+    },
+    "7009cb5139aacfa36527be566e0cb57964e243f4": {
+      "workers": {
+        "app/(client)/dashboard/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22D%3A%5C%5CRujal%20Project%5C%5Cartist-management-system%5C%5Cfrontend%5C%5Csrc%5C%5Ccomponent%5C%5CNavBar%5C%5Cindex.tsx%22%2C%5B%22%24%24ACTION_0%22%5D%5D%5D&__client_imported__=!"
+      },
+      "layer": {
+        "app/(client)/dashboard/page": "rsc"
+      }
     }
   },
   "edge": {},
-  "encryptionKey": "65rVsgNNQ+X0SrPLvwuuymRtAj5rbc3yoQkiUbC/GHw="
+  "encryptionKey": "DMFqzTcyjJFyRWEmTjRVrXsADy92AlNLZR68HG2s51E="
 }

@@ -17,10 +17,16 @@
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
-    "/dashboard/page": [
+    "/(client)/dashboard/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/dashboard/page.js"
+      "static/chunks/app/(client)/dashboard/page.js"
+    ],
+    "/(client)/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/(client)/layout.css",
+      "static/chunks/app/(client)/layout.js"
     ]
   }
 }

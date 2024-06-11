@@ -5,7 +5,7 @@ import User from "../models/User";
 import { SECRET_KEY } from "../constants/secret";
 
 class UserController {
-  protected async createUser(req: Request, res: Response, next: NextFunction) {
+  protected async createUser(req: Request, res: Response) {
     try {
       const { name, email, password, role, gender } = req.body;
 
@@ -22,7 +22,7 @@ class UserController {
           name: name,
           password: hash,
           role,
-          gender
+          gender,
         });
         const token = jwt.sign(
           { email: result.email, id: result.id },
@@ -60,6 +60,7 @@ class UserController {
       return res.status(401).json({ message: "" });
     }
   }
+
 }
 
 export default UserController;
