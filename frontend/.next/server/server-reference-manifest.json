@@ -1,5 +1,22 @@
 {
-  "node": {},
+  "node": {
+    "9a94c7cef8e675bad5b844684179618fdd52db39": {
+      "workers": {
+        "app/(auth)/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22D%3A%5C%5CRujal%20Project%5C%5Cartist-management-system%5C%5Cfrontend%5C%5Csrc%5C%5Cutils%5C%5Ctoken.ts%22%2C%5B%22getToken%22%2C%22storeToken%22%5D%5D%5D&__client_imported__=true!"
+      },
+      "layer": {
+        "app/(auth)/page": "action-browser"
+      }
+    },
+    "ff4abb99e1fb3a40ad5ddcd5f4908bae3a0432dd": {
+      "workers": {
+        "app/(auth)/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22D%3A%5C%5CRujal%20Project%5C%5Cartist-management-system%5C%5Cfrontend%5C%5Csrc%5C%5Cutils%5C%5Ctoken.ts%22%2C%5B%22getToken%22%2C%22storeToken%22%5D%5D%5D&__client_imported__=true!"
+      },
+      "layer": {
+        "app/(auth)/page": "action-browser"
+      }
+    }
+  },
   "edge": {},
-  "encryptionKey": "ro9jKPx+ZPmhOQ1ZRFzRTTiC2CXfBFUHXtBY//uG3VQ="
+  "encryptionKey": "65rVsgNNQ+X0SrPLvwuuymRtAj5rbc3yoQkiUbC/GHw="
 }
