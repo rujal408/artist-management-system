@@ -25,7 +25,6 @@ class MusicController {
     }
   }
 
-  // Read a music record by ID
   async getMusics(req: Request, res: Response) {
     try {
       const music = await Music.find();
