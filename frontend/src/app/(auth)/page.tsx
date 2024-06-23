@@ -8,7 +8,7 @@ import { useRouter } from "next/navigation";
 import { FormEvent, useState } from "react";
 
 export default function Login() {
-  const router = useRouter()
+  const router = useRouter();
   const [value, setValue] = useState({
     email: "",
     password: "",
@@ -22,9 +22,9 @@ export default function Login() {
   const onSubmit = async (e: FormEvent) => {
     e.preventDefault();
     try {
-     const res =  await axiosInstance.post("/users/login", value);
-      await storeToken(res.data.token)
-      router.push('/dashboard')
+      const res = await axiosInstance.post("/users/login", value);
+      await storeToken(res.data.token);
+      router.push("/dashboard");
     } catch (err) {
       //
     }
@@ -33,10 +33,20 @@ export default function Login() {
   return (
     <>
       <h1 className="bg-gray-300 p-5 text-xl">Login User</h1>
-      <form  onSubmit={onSubmit}>
+      <form onSubmit={onSubmit}>
         <div className="login-form">
-          <Input onChange={handleChange} type="email" name="email" />
-          <Input onChange={handleChange} type="password" name="password" />
+          <Input
+            onChange={handleChange}
+            type="email"
+            name="email"
+            placeholder="Email"
+          />
+          <Input
+            onChange={handleChange}
+            type="password"
+            name="password"
+            placeholder="Password"
+          />
         </div>
         <Button type="submit">Login</Button>
       </form>
